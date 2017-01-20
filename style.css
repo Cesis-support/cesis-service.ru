@@ -85,8 +85,10 @@ body{margin:0;font-family:Open Sans;}
 .item .post pre{font-family:Open Sans;white-space: pre-line;}
 .searchbox h4{font-weight:400; font-size:20px;margin-bottom:0;}
 .searchbox h5{color:#757575;font-weight:400;margin-top:5px;}
-.searchbox a{display:inline-block; color:#004274;font-weight:400; margin: 10px 0;}
-.searchbox .page-numbers{display:inline-block; background-color:#bdbdbd;font-weight:600; width:30px;height:30px;border-radius:50%;box-sizing:border-box;vertical-align:top;margin:10px 0;padding:4px; text-align:center;text-decoration:none;color:white;}
+.searchbox .resultbox{display:block;box-shadow:0 0 0 rgba(0,0,0,0);background-color:white; transition:.1s ease;box-sizing:border-box; padding-left:10px;margin:5px 0;color:#004274;}
+.searchbox .resultbox:hover{box-shadow:0 1px 10px rgba(0,0,0,0.4);color:white;background-color:#004274;}
+.searchbox a{display:block; color:inherit;font-weight:400; padding: 5px 0;}
+.searchbox .page-numbers{display:inline-block; background-color:#bdbdbd;font-weight:600; width:30px;height:30px;border-radius:50%;box-sizing:border-box;vertical-align:top;margin:10px 0;padding:4px; text-align:center;text-decoration:none;color:white;box-shadow:1px 1px 1px rgba(0,0,0,0.4);}
 .searchbox .page-numbers:hover{background-color:#004274;color:white;}
 .searchbox .current{color:#004274;cursor:pointer;}
 .searchbox .next,.searchbox .prev{display:none;}
