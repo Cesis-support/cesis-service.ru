@@ -2,7 +2,6 @@
 Theme Name: Cesis_Service
 Author: Cesis
 Author URI: http://cesis.ru
-Description: Cesis_Service тема котора¤ полностью пренадлежит компании ÷е—ис
 Version: 1.0.0
 Text Domain: cesiservice
 */
@@ -14,20 +13,22 @@ Text Domain: cesiservice
 body{margin:0;font-family:Open Sans;}
 .contentbox{width:100%;min-width:1000px;display:block;background-color:#FFF;min-height:50px;}
 .dark{background-color:#004274;}
-.header,.menu,.logotype,.news,.feedback,.service,.footer,.items{width:1000px;margin: 0 auto;}
+.header,.menu,.logotype,.news,.feedback,.service,.footer,.items,.searchbox,.item{width:1000px;margin: 0 auto;}
+.searchbox,.category_view,.item{min-height:700px;}
 .header{padding-bottom:6px;padding-top:6px;}
 .header .logo{padding-top:5px;padding-left:35px;width:25%;height:70px;height:70px;display:inline-block;vertical-align:top;box-sizing:border-box}
 .header .logo img{height:60px;}
-.header .search{padding-top:7px;width:45%;height:70px;display:inline-block;vertical-align:top;box-sizing:border-box}
-.header .search input{border:0; margin:10px 15px;font-size:16px;padding:10px;outline:none; width:90%;transition:.2s ease;box-shadow: 0 0 0 rgba(0,0,0,0);}
-.header .search input:focus{box-shadow: 0 0 20px rgba(0,0,0,0.4);}
+.header .search{padding-top:7px;width:45%;height:70px;display:inline-block;vertical-align:top;box-sizing:border-box;position:relative;}
+.header .search input[type='text']{border:0; margin:10px 15px;font-size:16px;padding:10px;outline:none; width:90%;transition:.2s ease;box-shadow: 0 0 0 rgba(0,0,0,0);height:40px;box-sizing:border-box;}
+.header .search input[type='text']:focus{box-shadow: 0 0 20px rgba(0,0,0,0.4);}
+.header .search input[type='submit']{position:absolute; top:17px;right:30px; width:40px; height:40px;border:0;background-color:rgba(0,0,0,0);background-image:url(img/search_icon.png);background-position:2px; cursor:pointer;outline:none;}
 .header .infophone{padding-top:13px;padding-left:30px;width:30%;height:70px;display:inline-block;vertical-align:top;box-sizing:border-box;color:white;font-weight:400}
 .header .infophone .info{font-weight:400;font-size:14px}
 .header .infophone .phone{font-weight:600;display:block}
 .menu-top-menu-container{border-bottom:1px solid #bdbdbd}
 .menu{height:70px;position:relative;padding: 0;}
-.menu .menu-item{height:70px;width:240px;display:table-cell;text-align:center;box-sizing:border-box;vertical-align:middle; border-right:1px solid #bdbdbd;cursor:pointer;font-size: 14px;padding-right: 10px;padding-left: 10px;}
-.menu .menu-item a{text-decoration:none;color:inherit;}
+.menu .menu-item{height:70px;width:195px;display:inline-block;text-align:center;box-sizing:border-box;vertical-align:middle; border-right:1px solid #bdbdbd;cursor:pointer;font-size: 14px;}
+.menu .menu-item a{text-decoration: none;color: inherit;height: 70px;font-size: 15px;display: table-cell;vertical-align: middle;width: 200px;}
 .menu .menu-item:hover{color:#FFF; background-color:#004274}
 .menu .menu-item:last-child{border:0;}
 .menu .sub-menu{display:none;cursor:default;text-align:left;position:absolute; top:70px;left:0px;width:1000px; height:auto; background-color:#004274; z-index:17; box-sizing:border-box; padding:15px;	box-shadow:0 2px 3px rgba(0,0,0,0.6)}
@@ -42,15 +43,15 @@ body{margin:0;font-family:Open Sans;}
 .biglogo .logotype{color:#004274;z-index:12;position:relative;box-sizing:border-box; text-align:left; top:100px; left:30px;display: block;width: 1000px;margin:auto}
 .biglogo .logotype h1{font-size:30px; margin-bottom:5px;    margin-top: 0;}
 .biglogo .logotype h3{font-weight:400;margin-top:5px; font-size:16px}
-.news{position:relative;}
-.news h3{color:#006cb4;margin-bottom:5px; padding: 15px 35px;}
-.news h3 a{color:#006cb4;}
-.news h4{font-weight:400;margin-top:5px; padding:0 30px}
-.news .new {border-bottom:1px solid #bdbdbd;}
-.news .new .text{font-size:14px;margin:10px 0; padding:0 30px; text-align:justify;}
-.news .new .more{padding:5px 0;margin-bottom:10px; padding:0 30px}
-.news .new .more a{font-size:14px;text-decoration:none;color:#004274;font-weight:600 }
-.news .allnews a{float:right;color:#004274;position:absolute; bottom:10px; right:40px;font-weight:600;font-size:14px;}
+.news,.item{position:relative;}
+.news h3,.item h3{color:#004274;margin-bottom:5px; padding: 15px 35px;}
+.news h3 a,.item h3 a{color:#004274;}
+.news h4,.item h4{font-weight:400;margin-top:5px; padding:0 30px}
+.news .new{border-bottom:1px solid #bdbdbd;}
+.news .new .text,.item .new .text{font-size:14px;margin:10px 0; padding:0 30px; text-align:justify;}
+.news .new .more,.item .new .more{padding:5px 0;margin-bottom:10px; padding:0 30px}
+.news .new .more a,.item .new .more a{font-size:14px;text-decoration:none;color:#004274;font-weight:600 }
+.news .allnews a,.item .allnews a{float:right;color:#004274;position:absolute; bottom:10px; right:40px;font-weight:600;font-size:14px;}
 .feedback h3{color:#004274;margin-bottom:5px; padding:0 30px}
 .feedback h4{font-weight:400;margin-top:5px;margin-bottom:5px;font-size:22px; padding:0 30px}
 .feedback p{margin-top:10px; padding:0 30px}
@@ -62,7 +63,7 @@ body{margin:0;font-family:Open Sans;}
  .cols .col2{width:480px;display:inline-block;vertical-align:top;}
  .cols .col2 textarea{width:480px;height:100px; resize:none;outline:none;border:1px solid #666;box-sizing:border-box; padding:10px;font-family:Open Sans;}
  .cols .col2 input{font-family:Open Sans;width:100px;height:40px; outline:none; background-color:#004274;border:0; color:white;margin-top:20px;font-weight:400; cursor:pointer}
-.feedback{border-bottom:1px solid #bdbdbd;padding-bottom:30px;}
+.feedback{padding-bottom:30px;}
 .service h3{color:#004274;margin-bottom:5px; padding:0 30px}
 .service p{margin-top:10px; padding:0 30px}
 .service .cols div{text-align:center}
@@ -70,15 +71,24 @@ body{margin:0;font-family:Open Sans;}
 .service .cols div a{color:#004274;font-weight:600}
 /*footer{position:absolute;bottom:0;width:100%;}*/
 .footer .footer_menu .menu{text-align:center;}
-.footer .footer_menu .menu .menu-item{color:#FFF; border:0;width:auto;padding: 25px 30px;display: inline-block;}
+.footer .footer_menu .menu .menu-item{color:#FFF; width:150px;border:0;display: inline-block;}
+.footer .footer_menu .menu .menu-item a{width:150px}
 .footer .info{color:#FFF; display:block;text-align:right; padding:20px 25px 20px 0}
 .footer .info a{color:#FFF;  text-decoration:none; }
 .category_view {display:block;text-align:left;width:815px;margin: 0 auto;}
-.category_view h3{text-align:left;padding:15px 35px;color:#006cb4;}
-.category_view h3 a{color:#006cb4;}
+.category_view h3{text-align:left;padding:15px 35px;color:#004274;}
+.category_view h3 a{color:#004274;}
 .category_view .block{display:inline-block;width:200px; height:210px; text-align:center;vertical-align:top;}
 .category_view .block .name a{color:#004274; text-decoration:none; padding-top:5px;display:block}
 .category_view .block .thumbnail{width:128px; height:128px;margin:auto}
 .category_view .block .thumbnail img{width:128px; height:128px;transition:0.2s ease;}
-.news .post pre{font-family:Open Sans}
-acasdasdas
+.item .post pre{font-family:Open Sans;white-space: pre-line;}
+.searchbox h4{font-weight:400; font-size:20px;margin-bottom:0;}
+.searchbox h5{color:#757575;font-weight:400;margin-top:5px;}
+.searchbox .resultbox{display:block;box-shadow:0 0 0 rgba(0,0,0,0);background-color:white; transition:.1s ease;box-sizing:border-box; padding-left:10px;margin:5px 0;color:#004274;}
+.searchbox .resultbox:hover{box-shadow:0 1px 10px rgba(0,0,0,0.4);color:white;background-color:#004274;}
+.searchbox a{display:block; color:inherit;font-weight:400; padding: 5px 0;}
+.searchbox .page-numbers{display:inline-block; background-color:#bdbdbd;font-weight:600; width:30px;height:30px;border-radius:50%;box-sizing:border-box;vertical-align:top;margin:10px 0;padding:4px; text-align:center;text-decoration:none;color:white;box-shadow:1px 1px 1px rgba(0,0,0,0.4);}
+.searchbox .page-numbers:hover{background-color:#004274;color:white;}
+.searchbox .current{color:#004274;cursor:pointer;}
+.searchbox .next,.searchbox .prev{display:none;}
