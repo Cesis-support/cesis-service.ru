@@ -1,0 +1,38 @@
+/*
+Theme Name: Cesis_Service
+Author: Cesis
+Author URI: http://cesis.ru
+Description: Cesis_Service тема которая полностью пренадлежит компании ЦеСис
+Version: 1.0.0
+Text Domain: cesiservice
+*/
+
+.contentbox{width:100%;min-width:0;}
+.header,.menu,.logotype,.news,.feedback,.service,.footer,.items{width:100%;}
+.header{height:auto;text-align:center}
+.header .logo{display:block;width:auto;}
+.header .logo img{height:60px;}
+.header .search{width:100%;}
+.header .search input{width:85%;}
+.header .infophone{width:100%;}
+.header .infophone .info{font-weight:300;font-size:14px}
+.header .infophone .phone{font-weight:bold;display:block}
+.menu{height:auto;}
+.menu .menu-item{height:70px;width:100%;display:block;font-size:20px; border-bottom:1px solid #bdbdbd; box-sizing:border-box; padding-top:20px;}
+
+.menu .menu-item:hover{color:#FFF; background-color:#004274}
+.menu .menu-item:last-child{border:0;}
+.menu .sub-menu{text-align:center;width:100%}
+.menu .menu-item-has-children:hover .sub-menu{display:block}
+.menu .sub-menu .menu-item{padding-top:0;width:auto;text-align:left;}
+.menu .sub-menu .menu-item a{width:auto;min-width:280px; padding-left:20px}
+.biglogo{background-image:none; height:200px;}
+.biglogo .logotype{width: 90%;}
+.biglogo .logotype h1{font-size:22px; }
+.biglogo .logotype h3{font-size:12px}
+ .cols .col1{width:100%;}
+ .cols .col1 p{width:100%;}
+ .cols .col1 input{width:100%}
+ .cols .col2{width:100%;}
+ .cols .col2 textarea{width:100%;}
+.category_view {width:100%;}
