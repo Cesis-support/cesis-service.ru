@@ -2,6 +2,7 @@
 Theme Name: Cesis_Service
 Author: Cesis
 Author URI: http://cesis.ru
+Description: Cesis_Service тема котора¤ полностью пренадлежит компании ÷е—ис
 Version: 1.0.0
 Text Domain: cesiservice
 */
@@ -13,7 +14,8 @@ Text Domain: cesiservice
 body{margin:0;font-family:Open Sans;}
 .contentbox{width:100%;min-width:1000px;display:block;background-color:#FFF;min-height:50px;}
 .dark{background-color:#004274;}
-.header,.menu,.logotype,.news,.feedback,.service,.footer,.items,.searchbox{width:1000px;margin: 0 auto;}
+.header,.menu,.logotype,.news,.feedback,.service,.footer,.items,.searchbox,.item{width:1000px;margin: 0 auto;}
+.searchbox,.category_view,.item{min-height:700px;}
 .header{padding-bottom:6px;padding-top:6px;}
 .header .logo{padding-top:5px;padding-left:35px;width:25%;height:70px;height:70px;display:inline-block;vertical-align:top;box-sizing:border-box}
 .header .logo img{height:60px;}
@@ -42,15 +44,15 @@ body{margin:0;font-family:Open Sans;}
 .biglogo .logotype{color:#004274;z-index:12;position:relative;box-sizing:border-box; text-align:left; top:100px; left:30px;display: block;width: 1000px;margin:auto}
 .biglogo .logotype h1{font-size:30px; margin-bottom:5px;    margin-top: 0;}
 .biglogo .logotype h3{font-weight:400;margin-top:5px; font-size:16px}
-.news{position:relative;}
-.news h3{color:#004274;margin-bottom:5px; padding: 15px 35px;}
-.news h3 a{color:#004274;}
-.news h4{font-weight:400;margin-top:5px; padding:0 30px}
-.news .new {border-bottom:1px solid #bdbdbd;}
-.news .new .text{font-size:14px;margin:10px 0; padding:0 30px; text-align:justify;}
-.news .new .more{padding:5px 0;margin-bottom:10px; padding:0 30px}
-.news .new .more a{font-size:14px;text-decoration:none;color:#004274;font-weight:600 }
-.news .allnews a{float:right;color:#004274;position:absolute; bottom:10px; right:40px;font-weight:600;font-size:14px;}
+.news,.item{position:relative;}
+.news h3,.item h3{color:#004274;margin-bottom:5px; padding: 15px 35px;}
+.news h3 a,.item h3 a{color:#004274;}
+.news h4,.item h4{font-weight:400;margin-top:5px; padding:0 30px}
+.news .new{border-bottom:1px solid #bdbdbd;}
+.news .new .text,.item .new .text{font-size:14px;margin:10px 0; padding:0 30px; text-align:justify;}
+.news .new .more,.item .new .more{padding:5px 0;margin-bottom:10px; padding:0 30px}
+.news .new .more a,.item .new .more a{font-size:14px;text-decoration:none;color:#004274;font-weight:600 }
+.news .allnews a,.item .allnews a{float:right;color:#004274;position:absolute; bottom:10px; right:40px;font-weight:600;font-size:14px;}
 .feedback h3{color:#004274;margin-bottom:5px; padding:0 30px}
 .feedback h4{font-weight:400;margin-top:5px;margin-bottom:5px;font-size:22px; padding:0 30px}
 .feedback p{margin-top:10px; padding:0 30px}
@@ -81,7 +83,7 @@ body{margin:0;font-family:Open Sans;}
 .category_view .block .name a{color:#004274; text-decoration:none; padding-top:5px;display:block}
 .category_view .block .thumbnail{width:128px; height:128px;margin:auto}
 .category_view .block .thumbnail img{width:128px; height:128px;transition:0.2s ease;}
-.news .post pre{font-family:Open Sans}
+.item .post pre{font-family:Open Sans;white-space: pre-line;}
 .searchbox h4{font-weight:400; font-size:20px;margin-bottom:0;}
 .searchbox h5{color:#757575;font-weight:400;margin-top:5px;}
 .searchbox a{display:inline-block; color:#004274;font-weight:400; margin: 10px 0;}
@@ -89,4 +91,3 @@ body{margin:0;font-family:Open Sans;}
 .searchbox .page-numbers:hover{background-color:#004274;color:white;}
 .searchbox .current{color:#004274;cursor:pointer;}
 .searchbox .next,.searchbox .prev{display:none;}
-
