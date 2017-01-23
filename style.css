@@ -48,7 +48,8 @@ body{margin:0;font-family:Open Sans;}
 .news h3 a,.item h3 a{color:#004274;}
 .news h4,.item h4{font-weight:400;margin-top:5px; padding:0 30px}
 .news .new{}
-.news-inside{width: 50%;display: inline-block;}
+.news-inside{width: 49%;display: inline-block; vertiacal-align: top;}
+.feedback{width: 100% !important;}
 .news .new .text{font-size:14px;margin:10px 0; padding:0 30px;}
 .item .new .text{font-size:14px;margin:10px 0; padding:0 30px; text-align:justify;}
 .news .new .more,.item .new .more{padding:5px 0;margin-bottom:10px; padding:0 30px}
