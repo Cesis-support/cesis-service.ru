@@ -47,7 +47,7 @@ body{margin:0;font-family:Open Sans;}
 .news h3,.item h3{color:#004274;margin-bottom:5px; padding: 15px 35px;}
 .news h3 a,.item h3 a{color:#004274;}
 .news h4,.item h4{font-weight:400;margin-top:5px; padding:0 30px}
-.news .new{width: 33%;display: inline-block; vertical-align: top;}
+.news .new{}
 .news .new .text{font-size:14px;margin:10px 0; padding:0 30px;}
 .item .new .text{font-size:14px;margin:10px 0; padding:0 30px; text-align:justify;}
 .news .new .more,.item .new .more{padding:5px 0;margin-bottom:10px; padding:0 30px}
