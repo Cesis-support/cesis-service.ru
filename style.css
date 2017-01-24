@@ -79,7 +79,7 @@ body{margin:0;font-family:Open Sans;}
 .footer .info{color:#FFF; display:block;text-align:right; padding:20px 25px 20px 0}
 .footer .info a{color:#FFF;  text-decoration:none; }
 .category_view {display:block;text-align:left;width:815px;margin: 0 auto;}
-.category_view h3{text-align:left;padding:15px 35px;color:#004274;}
+.category_view h3{text-align:left;padding:15px 35px;color:#004274;font-size:18px;}
 .category_view h3 a{color:#004274;}
 .category_view .block{display:inline-block;width:200px; height:210px; text-align:center;vertical-align:top;}
 .category_view .block .name a{color:#004274; text-decoration:none; padding-top:5px;display:block}
